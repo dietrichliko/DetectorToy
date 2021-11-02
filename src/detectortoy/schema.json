@@ -1,0 +1,125 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "properties": {
+        "magnet": { 
+            "type": "object",
+            "properties" : {
+                "field" : { "type": "number"}
+            },
+            "additionalProperties": false
+        },
+        "beampipe": { 
+            "type": "object",
+            "properties" : {
+                "radius" : { "type": "number" },
+                "x0" : { "type": "number" },
+                "wedge" : { "type": "number" },
+                "color" : { "type": "string"}
+            },
+            "additionalProperties": false
+        },
+        "barrel" : { 
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties" : {
+                    "name" : { "type": "string" },
+                    "radius" : { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "z_pos": { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "x0":  { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "active":  { 
+                        "type": "array",
+                        "items" : {
+                            "type": "boolean"
+                        }
+                    },
+                    "sigma_rphi":  { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "sigma_z":  { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "color" : { "type": "string" }
+                },
+                "additionalProperties" : false
+            }
+        },
+        "forward" : { 
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties" : {
+                    "name" : { "type": "string" },
+                    "z_pos" : { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "r_min": { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "r_max": { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "x0":  { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "active":  { 
+                        "type": "array",
+                        "items" : {
+                            "type": "boolean"
+                        }
+                    },
+                    "sigma_x":  { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "sigma_y":  { 
+                        "type": "array",
+                        "items" : {
+                            "type": "number"
+                        }
+                    },
+                    "color" : { "type": "string" }
+                },
+                "additionalProperties" : false
+            }
+        }
+    }
+}
+

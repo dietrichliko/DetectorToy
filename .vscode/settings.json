@@ -1,0 +1,22 @@
+{
+    "yaml.customTags": [
+        "!magnet mapping",
+        "!beampipe mapping",
+        "!barrel mapping",
+        "!forward mapping"
+    ],
+    "yaml.schemas": {
+        "${workspaceFolder:DetectorToy}/src/detectortoy/schema.json": "*.yaml"   
+    },
+    "python.formatting.provider": "black",
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:DetectorToy}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    }
+}

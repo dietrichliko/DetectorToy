@@ -1,0 +1,32 @@
+---
+magnet: !magnet
+  field: 2.0
+
+beampipe: !beampipe
+  radius: 15.0
+  x0: 0.1
+  wedge: 0.15
+  color: orange
+
+barrel:
+  - !barrel
+    name: Vertex
+    radius:     [  17.5,   18.5,   37.0,   38.0,   57.0,   58.0,  112.0 ] 
+    z_pos:      [ 125.0,  125.0,  125.0,  125.0,  125.0,  125.0,  310.0 ]
+    x0:         [ 0.312,  0.312,  0.312,  0.312,  0.312,  0.312,      0 ]
+    active:     [  True,   True,   True,   True,   True,   True,  False ] 
+    sigma_rphi: [ 3.e-6,  3.e-6,  3.e-6,  3.e-6,  3.e-6,  3.e-6,      0 ]
+    sigma_z:    [ 3.e-6,  3.e-6,  3.e-6,  3.e-6,  3.e-6,  3.e-6,      0 ]
+    color: blue
+
+forward:
+  - !forward
+    name: Vertex
+    z_pos:   [ 126.0, 159.0, 161.0, 229.0, 231.0, 299.0, 301.0]
+    r_min:   [  17.5,  24.0,  24.0,  34.5,  34.5,  45.0,  45.0]
+    r_max:   [ 102.0, 102.0, 102.0, 102.0, 102.0, 102.0, 102.0]
+    x0:      [     0, 0.351, 0.351, 0.351, 0.351, 0.351, 0.351]
+    active:  [ False,  True,  True,  True,  True,  True, True]
+    sigma_x: [ 3.e-6, 3.e-6, 3.e-6, 3.e-6, 3.e-6, 3.e-6, 3.e-6]
+    sigma_y: [ 3.e-6, 3.e-6, 3.e-6, 3.e-6, 3.e-6, 3.e-6, 3.e-6]
+    color: green

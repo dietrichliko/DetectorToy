@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "DetectorToy"
+version = "0.1.0"
+description = ""
+authors = ["Dietrich Liko <Dietrich.Liko@oeaw.ac.at>"]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+PyYAML = "^6.0"
+matplotlib = "^3.4.3"
+numpy = "^1.21.3"
+itermplot = {git = "https://github.com/daleroberts/itermplot.git"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.9b0"
+flake8 = "^4.0.1"
+flake8-bugbear = "^21.9.2"
+mypy = "^0.910"
+pre-commit = "^2.15.0"
+types-PyYAML = "^6.0.0"
+flake8-bandit = "^2.1.2"
+flake8-docstrings = "^1.6.0"
+flake8-rst-docstrings = "^0.2.3"
+pep8-naming = "^0.12.1"
+darglint = "^1.8.1"
+reorder-python-imports = "^2.6.0"
+pre-commit-hooks = "^4.0.1"
+
+[tool.poetry.scripts]
+detectortoy = "detectortoy.detectortoy:main"
+
+[tool.mypy]
+plugins = "numpy.typing.mypy_plugin"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
